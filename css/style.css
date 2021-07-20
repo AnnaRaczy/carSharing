@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800;900&family=Open+Sans:wght@300;400&display=swap');
+
+/* font-family: 'Nunito Sans', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+.container {
+    width: 1088px;
+    margin: 0 auto;;
+}
+
+header {
+    position: absolute;
+    height: 90px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0, 0.3);
+    border-bottom: 2px solid #FFFFFF33;
+    z-index: 2;
+}
+
+.header--block {  
+    height: 100%;  
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    line-height: 47px;
+    font-size: 35px;
+}
+
+.logo img {
+    padding-right: 10px;
+}
+
+.logo span {
+    color: #FF0000;
+    padding: 5px;
+}
+
+ul.header--list {
+    margin-right: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.header--list li a {
+    text-decoration: none;
+    padding: 33px 40px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+
+.header--list li a:hover {
+    background-color: #FFFFFF33;
+}
+
+/* End of Header */
+
+
+.section--header {
+    height: 100vh;
+    background-image: url("../images/Image.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.section--header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+
+}
+
+.section--main {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+}
+
+.section--main > a {
+    position: absolute;
+    bottom: 0;
+}
+
+.main--title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    text-transform: uppercase;
+    text-shadow: 0px 3px 6px #00000040;
+}
+
+.section--main p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 16px;
+}
+
+.buttons {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
+
+.buttons a {
+    padding: 22px 55px;
+    border-radius: 40px;
+    text-decoration: none;
+    box-shadow: 0px 3px 6px #FF00004D;
+    text-transform: uppercase;
+    background-color: white;
+    color: #FF0000;
+    margin-left: 20px;
+}
+
+.buttons a:first-child {
+    background-color: #FF0000;
+    color: #fff;
+    margin-right: 20px;
+}
+
+
+/* End of Section 1 */
+
+
+.section--blog {
+    color: #000;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.section--blog h3 {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 47px;
+    font-weight: 700px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container h3::before,
+.container h3::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #FF0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section--blog .box {
+    width: calc((100% -16px * 2) / 3);
+    text-align: left;
+    color: #6A6A6A;
+}
+
+.section--blog .box img {
+    width: 352px;
+    height: 234px;
+}
+
+.section--blog .box h4 {
+    padding: 20px 0;
+}
+
+.section--blog .box p {
+    width: 250px;
+    height: 79px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    display: inline-block;
+}
+.section--blog .box a {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+    box-shadow: 0px 3px 6px #FF00004D;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+
+/* End od section 2 */
+
+
+.section--service {
+    width: 100%;
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #28272C;
+}
+
+.boxes--service {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 154px;
+}
+
+.boxes--service .box {
+    width: 231px;
+    margin: 0 45px;
+    text-align: center;
+    color: #6A6A6A;
+    margin-top: 75px;
+}
+
+.boxes--service .box img {
+    border-radius: 85px;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+}
+
+.boxes--service .box h4 {
+    width: 231px;
+    padding: 5px 0;
+    font-size: 19px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.boxes--service .box p {
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    color: #B2B2B2;
+}
+.boxes--service .box a {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+    box-shadow: 0px 3px 6px #FF00004D;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.section--service h3 {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 47px;
+    font-weight: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/* End of section 3 */
+
+
+.section__form {
+    color: #B2B2B2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.section--wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.section--wrapper img {
+    width: 444px;
+    height: 317px;
+    margin-right: 16px;
+}
+
+.boxes__form {
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+input[type='text'], input[type='email'], textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    outline: none; 
+    border: 1px solid #D1D1D1;
+    color: #B2B2B2;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+input[type="text"], input[type="email"] {
+    height: 38px;
+    padding: 8px;
+}
+
+textarea {
+    min-height: 140px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border: 1px solid #FF0000;
+    box-shadow: 0px 1px 6px #FF00004D;
+    opacity: 1;
+}
+
+
+input::placeholder, textarea::placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #B2B2B2;
+}
+
+input::placeholder {
+    padding: 8px 12px;
+}
+
+textarea::placeholder {
+    padding-top: 8px;
+    padding-left: 12px;
+    padding-bottom: 110px;
+}
+
+
+.section__form h3 {
+    text-align: center;
+    line-height: 47px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section__form h3::before, 
+.section__form h3::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #FF0000 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border-radius: 8px;
+    margin: 10px;
+
+}
+
+.button__styling {
+    display: flex;
+    margin-bottom: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    text-align: left;
+}
+
+.button__styling input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+
+.button__styling span {
+    flex-shrink: 0;
+    height: 22px;
+    flex-basis: 22px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+.button__styling input:checked + span {
+    background-image: url(../images/IconCheck.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+form button {
+    display: block;
+    width: 142px;
+    height: 40px;
+    cursor: pointer;
+    padding: 11px 52px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FF0000;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+
+/* End of section 4 */
+
+.footer__block {
+    height: 232px;
+    display: flex;
+    position: relative;
+    background-color: #28272C;
+}
+
+.logo__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    
+    font-size: 25px;
+}
+
+.logo__footer img {
+    height: 19px;
+    width: 16px;
+    margin-right: 8px;
+}
+
+.logo__footer p {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.logo__footer p span {
+    color: #FF0000;
+}
+
+
+.footer__lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.footer__lists nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer__lists ul {
+    margin-right: 141px;
+    list-style: none;
+}
+
+.footer__lists li {
+    padding-bottom: 7px;
+}
+
+.footer__lists a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer__lists a:hover {
+    color: #FF0000;
+}
+
+.footer__lists p {
+    font-size: 12px;
+    font-weight: 300;
+    color: #D1D1D1;
+}
+
+
+
+
+
+
+
+
+
+
+ 
